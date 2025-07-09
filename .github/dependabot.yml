@@ -3,7 +3,7 @@ registries:
   delta-registry:
     type: cargo-registry
     registry: "delta-registry"
-    url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
+    url: "sparse+https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/"
     token: "Token ${{secrets.CARGO_TOKEN}}"
 updates:
   - package-ecosystem: "cargo"
