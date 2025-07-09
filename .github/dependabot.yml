@@ -1,6 +1,6 @@
 version: 2
 registries:
-  cargo-example:
+  delta-registry:
     type: cargo-registry
     registry: "delta-registry"
     url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
