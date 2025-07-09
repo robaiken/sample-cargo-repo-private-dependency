@@ -4,7 +4,9 @@ registries:
     type: cargo-registry
     registry: "delta-registry"
     url: "https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/"
-    token: "${{secrets.CARGO_TOKEN}}"
+    username: "thavaahariharangit@github.com"  # Store username in GitHub Secrets
+    password: "${{secrets.CARGO_TOKEN}}"
+    
 updates:
   - package-ecosystem: "cargo"
     directory: "/"
