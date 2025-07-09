@@ -4,3 +4,5 @@ updates:
     directory: "/" # Location of Cargo.toml
     schedule:
       interval: "weekly"
+
+      
