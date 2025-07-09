@@ -4,7 +4,7 @@ registries:
     type: cargo-registry
     registry: "delta-registry"
     url: "https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/"
-    token: "Bearer ${{secrets.CARGO_TOKEN}}"
+    token: "${{secrets.CARGO_TOKEN}}"
     
 updates:
   - package-ecosystem: "cargo"
