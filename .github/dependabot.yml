@@ -1,6 +1,17 @@
 version: 2
+registries:
+  cargo-example:
+    type: cargo-registry
+    registry: "name-of-your-registry"
+    url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
+    token: "Token ${{secrets.CARGO_TOKEN}}"
 updates:
   - package-ecosystem: "cargo"
-    directory: "/" # Location of Cargo.toml
+    directory: "/"
+    registries: ["delta-registry"]
     schedule:
-      interval: "weekly" 
+      interval: "daily"
+    groups:
+      delta-dependencies:
+        patterns:
+          - "*" # Soon, we'll use "delta_*"
