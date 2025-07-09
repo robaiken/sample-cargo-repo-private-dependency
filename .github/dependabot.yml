@@ -2,7 +2,7 @@ version: 2
 registries:
   cargo-example:
     type: cargo-registry
-    registry: "name-of-your-registry"
+    registry: "delta-registry"
     url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
     token: "Token ${{secrets.CARGO_TOKEN}}"
 updates:
