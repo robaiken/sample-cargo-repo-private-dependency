@@ -3,6 +3,4 @@ updates:
   - package-ecosystem: "cargo"
     directory: "/" # Location of Cargo.toml
     schedule:
-      interval: "weekly"
-
-      
+      interval: "weekly" 
