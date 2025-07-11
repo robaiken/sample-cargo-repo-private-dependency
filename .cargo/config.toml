@@ -1,2 +1,0 @@
-[registries]
-artifactory = { index = "https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/" }
