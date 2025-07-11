@@ -13,7 +13,7 @@ updates:
       - "artifactory"
     schedule:
       interval: "daily"
-    groups:
-      delta-dependencies:
-        patterns:
-          - "*" # Soon, we'll use "delta_*"
+    # groups:
+    #   delta-dependencies:
+    #     patterns:
+    #       - "*" # Soon, we'll use "delta_*"
