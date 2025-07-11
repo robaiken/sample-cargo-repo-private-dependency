@@ -6,11 +6,11 @@ version = 4
 name = "cargo_private_registry_test"
 version = "0.1.0"
 dependencies = [
- "custom-package",
+ "my_crate",
 ]
 
 [[package]]
-name = "custom-package"
+name = "my_crate"
 version = "0.1.0"
 source = "sparse+https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/"
-checksum = "40a2cce455eef2f00aec305a1f6131dd444359d02ecc501d1c88cc5b7fbfc998"
+checksum = "38e6cf7404a9022691a755f57409a8b911c9738e4e0bdf5b64d2ac88146890b1"
