@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-my_crate = { version = "0.1.0", registry = "artifactory" }
+custom-package = { version = "0.1.0", registry = "artifactory" }
