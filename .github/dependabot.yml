@@ -14,6 +14,6 @@ updates:
     schedule:
       interval: "daily"
     groups:
-      artifactory-dependencies:
+      artifactory-dependency-group:
         patterns:
           - "*" # Soon, we'll use "delta_*"
