@@ -6,3 +6,5 @@ global-credential-providers = ["cargo:token"]
 [registries.artifactory]
 index = "sparse+https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/"
 token = "Bearer ${secrets.CARGO_TOKEN}"
+username = "thavaahariharan@github.com"
+password = "${secrets.CARGO_TOKEN}"
