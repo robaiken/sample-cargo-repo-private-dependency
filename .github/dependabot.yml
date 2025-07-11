@@ -1,6 +1,6 @@
 version: 2
 registries:
-  delta-registry:
+  artifactory:
     type: cargo-registry
     registry: artifactory
     url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
@@ -10,7 +10,7 @@ updates:
   - package-ecosystem: "cargo"
     directory: "/"
     registries: 
-      - "delta-registry"
+      - "artifactory"
     schedule:
       interval: "daily"
     groups:
