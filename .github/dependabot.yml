@@ -2,7 +2,6 @@ version: 2
 registries:
   artifactory:
     type: cargo-registry
-    registry: "artifactory"
     url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
     token: "Bearer ${{secrets.CARGO_TOKEN}}"
     
