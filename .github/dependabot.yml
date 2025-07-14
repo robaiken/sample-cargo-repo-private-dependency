@@ -1,19 +1,18 @@
 version: 2
 registries:
-  delta-registry:
+  artifactory:
     type: cargo-registry
-    registry: delta
     url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
-    token: "Token ${{secrets.CARGO_TOKEN}}"
+    token: "Bearer ${{secrets.CARGO_TOKEN}}"
     
 updates:
   - package-ecosystem: "cargo"
     directory: "/"
     registries: 
-      - "delta-registry"
+      - "artifactory"
     schedule:
       interval: "daily"
     groups:
-      delta-dependencies:
+      artifactory-dependency-group:
         patterns:
           - "*" # Soon, we'll use "delta_*"
